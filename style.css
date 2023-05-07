@@ -74,7 +74,7 @@ a.header-nav--active {
 }
 
 .pricing-plan__title {
-  border-bottom: #d4f518 1px solid;
+  border-bottom: #d4f518 2px solid;
   margin: 0;
   letter-spacing: 2px;
   padding-bottom: 10px;
@@ -82,7 +82,7 @@ a.header-nav--active {
 
 .pricing-plan__price,
 .pricing-plan p {
-  margin: 15px 0 0 0;
+  margin: 16px 0 0 0;
 }
 
 .pricing-plan__price {
@@ -100,7 +100,11 @@ a.header-nav--active {
 }
 
 .pricing-plan__features li {
-  padding: 5px;
+  line-height: 1.8;
+}
+
+.pricing-plan__features li::marker {
+  color: #d4f518;
 }
 
 .pricing-plan__assinatura {
@@ -111,4 +115,11 @@ a.header-nav--active {
   text-decoration: none;
   text-align: center;
   font-weight: bold;
+}
+
+.pricing-plan__assinatura:hover {
+  color: rgb(255, 255, 255);
+  outline: 2px #d4f518 solid;
+  background: transparent;
+  transition: 0.4s;
 }
