@@ -64,6 +64,8 @@ a.header-nav--active {
 }
 
 .pricing-plan {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   background-color: rgb(34, 34, 34);
   box-shadow: 0 5px 15px -5px black;
@@ -74,6 +76,7 @@ a.header-nav--active {
 .pricing-plan__title {
   border-bottom: #d4f518 1px solid;
   margin: 0;
+  letter-spacing: 2px;
   padding-bottom: 10px;
 }
 
