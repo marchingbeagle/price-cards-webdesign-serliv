@@ -4,6 +4,7 @@ body {
   margin: auto;
   color: white;
   background-color: rgb(14, 13, 13);
+  font-family: "JetBrains Mono", monospace;
 }
 
 header {
