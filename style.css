@@ -1,6 +1,6 @@
 body {
-  width: 60%;
-  min-width: 500px;
+  width: 90%;
+  max-width: 960px;
   margin: auto;
   color: white;
   background-color: rgb(14, 13, 13);
@@ -8,11 +8,12 @@ body {
 }
 
 header {
-  background-color: black;
-  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  background-color: black;
+  padding: 16px;
 }
 
 .header__logo {
@@ -29,14 +30,18 @@ header {
 .header-nav-lista a {
   padding: 10px 5px;
   text-decoration: none;
+  border-radius: 5px;
   color: white;
 }
 
 .header-nav-lista a:hover {
-  background-color: #d4f518;
+  text-decoration: underline;
+}
+
+a.header-nav--active {
   color: black;
-  border-radius: 5px;
-  transition: 0.3s;
+  background-color: #d4f518;
+  pointer-events: none;
 }
 
 .main-title,
@@ -47,7 +52,7 @@ header {
 }
 
 .main-title {
-  font-size: 70px;
+  font-size: 62px;
   text-align: center;
 }
 
@@ -55,17 +60,15 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 16px;
 }
 
 .pricing-plan {
-  display: flex;
-  flex-direction: column;
+  flex: 1;
   background-color: rgb(34, 34, 34);
-  padding: 20px;
+  box-shadow: 0 5px 15px -5px black;
+  padding: 30px;
   border-radius: 6px;
-  width: 25%;
-  min-width: 300px;
 }
 
 .pricing-plan__title {
